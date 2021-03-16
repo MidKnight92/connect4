@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+header {
+    font-size: 5vmin;
+    letter-spacing: 1vmin;
+    color: lightblue;
+}
+#markers {
+    display: grid;
+    grid-template-columns: repeat(7, 10vmin);
+    gap: 1vmin;
+}
+
+#markers > div {
+    height: 10vmin;
+    border-width: 5vmin;
+    border-style: solid;
+    border-color: lightblue transparent transparent;
+    margin-top: 4vmin;
+    transform: scale(0.7);
+    border-bottom: 0;
+}
+
+#markers > div:hover {
+    transform: scale3d(0.5);
+    transform: all 0.9s ease-in;
+    border-top-color: lightskyblue;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 10vmin);
+    grid-template-rows: repeat(6, 10vmin);
+    gap: 1vmin;
+}
+
+#board > div {
+    border-radius: 50%;
+    border: .04vmin solid lightskyblue;
+}
+
+button {
+    padding: .5vmin;
+    margin-top: 4vmin;
+    border: .1vmin double lightblue;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 3vmin;
+    letter-spacing: 1vmin;
+    color: lightblue;
+}
+
+button:hover {
+    color: lightskyblue;
+    border: .1vmin double lightskyblue;
+    /* background-color: lightgray; */
+    transform: scale3d(0.7);
+    transform: all 0.9s ease-in;
+}
+
+button:focus {
+    outline: none;
+}
